@@ -1,3 +1,8 @@
 # dotfiles
-Contains all my dot files, including .vimrc
-this is the modifications to the readme file
+
+This folder contains all my dotfiles
+=====================================
+author: Ashfaque Ahammed
+
+.vimrc				=> VIM config files
+.vim/colors/ashfaque.vim 	=> vim color scheme
