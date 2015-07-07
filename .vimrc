@@ -1,3 +1,5 @@
+"author: Ashfaque Ahammed
+"
 set nocompatible	"all commands taken as vim not vi
 syntax enable		"enable syntax..highlightig with diffrent colos
 set autoindent		"enable auto indendation after indent
