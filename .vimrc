@@ -11,8 +11,11 @@ set incsearch		"incrimental highlighting for search reasults
 set cursorline		"highlight the entire line of current cursor posistion
 set noswapfile		"disable swap file
 set nobackup		"disable backup file
-colorscheme ashfaque	"custom colorschem	
+set hlsearch		"Highlight all search matches
+nnoremap <CR> :noh<CR><CR>	" Clear search matches by pressing enter 
 
+colorscheme ashfaque
+colorscheme kkruby
 inoremap { {}<Esc>i
 inoremap ( ()<Esc>i
 inoremap [ []<Esc>i
