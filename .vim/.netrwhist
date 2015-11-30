@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/ashfaque/.ssh'
+let g:netrw_dirhist_2='/home/ashfaque/project/AjitRepoV2/processor/C/common'
+let g:netrw_dirhist_3='/home/ashfaque/project/AjitRepoV2/processor/verification/floating_point/add'
