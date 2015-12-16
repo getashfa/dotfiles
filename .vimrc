@@ -21,6 +21,7 @@ inoremap ( ()<Esc>i
 inoremap [ []<Esc>i
 inoremap " ""<Esc>i
 inoremap ' ''<Esc>i
+inoremap < <><Esc>i
 
 if has("gui_running")
   " GUI is running or is about to start.
