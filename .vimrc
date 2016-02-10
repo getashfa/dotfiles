@@ -52,3 +52,15 @@ set softtabstop=4
 set tabstop=4
 set shiftwidth=4
 set expandtab
+" ===========================================
+" Aa syntax highlighting
+" ===========================================
+autocmd FileType aa call FT_aa()
+function! FT_aa()
+    set autoindent
+    set number
+    set syntax=aa
+ endfunction
+"recognize an aa file from its extension
+au BufRead,BufNewFile *.aa set filetype=aa
+" ===========================================

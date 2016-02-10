@@ -1,3 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/home/ashfaque/project/AjitRepoV2/processor/vhdl'
+let g:netrw_dirhist_2='/home/ashfaque/project/AjitRepoV2/processor/FPGA/riffa2cpu/loopback_example'
+let g:netrw_dirhist_3='/home/ashfaque/project/AjitRepoV2/processor/Aa_withoutFPU/riffa_aggregator/implement'
+let g:netrw_dirhist_4='/home/ashfaque/.config'
+let g:netrw_dirhist_5='/home/ashfaque/project/AjitRepoV2/processor/Aa_withoutFPU/cpu/includes'
+let g:netrw_dirhist_6='/home/ashfaque/project/AjitRepoV2/processor'
+let g:netrw_dirhist_7='/home/ashfaque/project/AjitRepoV2/processor/Aa_withoutFPU/cpu/teu/iunit/iu_registers'
+let g:netrw_dirhist_8='/home/ashfaque/project/AjitRepoV2/processor/Aa_withoutFPU/cpu/teu/iunit/iu_writeback'
