@@ -16,6 +16,8 @@ nnoremap <CR> :noh<CR><CR>	" Clear search matches by pressing enter
 
 colorscheme ashfaque
 colorscheme kkruby
+let g:jellybeans_use_lowcolor_black = 0
+""colorscheme jellybeans
 inoremap { {}<Esc>i
 inoremap ( ()<Esc>i
 inoremap [ []<Esc>i
@@ -27,7 +29,7 @@ if has("gui_running")
   " GUI is running or is about to start.
   " Maximize gvim window (for an alternative on Windows, see simalt below).
   set lines=999 columns=999
-  set guifont=Monospace\ 12
+  set guifont=Monospace\ 11
 else
   " This is console Vim.
   if exists("+lines")
@@ -64,3 +66,36 @@ function! FT_aa()
 "recognize an aa file from its extension
 au BufRead,BufNewFile *.aa set filetype=aa
 " ===========================================
+"Gvim setting font size
+" ===========================================
+let s:pattern = '^\(.* \)\([1-9][0-9]*\)$'
+let s:minfontsize = 6
+let s:maxfontsize = 16
+function! AdjustFontSize(amount)
+  if has("gui_gtk2") && has("gui_running")
+    let fontname = substitute(&guifont, s:pattern, '\1', '')
+    let cursize = substitute(&guifont, s:pattern, '\2', '')
+    let newsize = cursize + a:amount
+    if (newsize >= s:minfontsize) && (newsize <= s:maxfontsize)
+      let newfont = fontname . newsize
+      let &guifont = newfont
+    endif
+  else
+    echoerr "You need to run the GTK2 version of Vim to use this function."
+  endif
+endfunction
+
+function! LargerFont()
+  call AdjustFontSize(1)
+endfunction
+command! LargerFont call LargerFont()
+
+function! SmallerFont()
+  call AdjustFontSize(-1)
+endfunction
+command! SmallerFont call SmallerFont()
+"========= Gvim full screen mode with F11=========="
+map <silent> <F11>
+\    :call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")<CR>
+" ===========================================
+set pastetoggle=<F10> "toggle paste/nopaste with F10 key

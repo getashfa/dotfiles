@@ -8,7 +8,7 @@
 
 " Default GUI Colours
 let s:foreground   = "c0bfbf"
-let s:background   = "101010"
+let s:background   = "1B2026"
 let s:bg1   = "111111"
 let s:bg2   = "050505"
 let s:bg2   = "0f0f0f"
