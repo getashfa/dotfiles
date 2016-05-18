@@ -1,5 +1,9 @@
 "author: Ashfaque Ahammed
 "
+
+" Testing pathogen
+execute pathogen#infect() 
+
 set nocompatible	"all commands taken as vim not vi
 syntax enable		"enable syntax..highlightig with diffrent colos
 set autoindent		"enable auto indendation after indent
@@ -16,14 +20,20 @@ nnoremap <CR> :noh<CR><CR>	" Clear search matches by pressing enter
 
 colorscheme ashfaque
 colorscheme kkruby
+"colorscheme oceanlight
+"colorscheme monokai
+
+
 let g:jellybeans_use_lowcolor_black = 0
+
+" Maping of auto-pairs
 ""colorscheme jellybeans
-inoremap { {}<Esc>i
-inoremap ( ()<Esc>i
-inoremap [ []<Esc>i
-inoremap " ""<Esc>i
-inoremap ' ''<Esc>i
-inoremap < <><Esc>i
+""inoremap { {}<Esc>i
+""inoremap ( ()<Esc>i
+""inoremap [ []<Esc>i
+""inoremap " ""<Esc>i
+""inoremap ' ''<Esc>i
+""inoremap < <><Esc>i
 
 if has("gui_running")
   " GUI is running or is about to start.
