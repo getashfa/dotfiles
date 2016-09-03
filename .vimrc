@@ -19,9 +19,9 @@ set hlsearch		"Highlight all search matches
 nnoremap <CR> :noh<CR><CR>	" Clear search matches by pressing enter 
 
 colorscheme ashfaque
-colorscheme kkruby
+"colorscheme kkruby
 "colorscheme oceanlight
-"colorscheme monokai
+colorscheme monokai
 
 
 let g:jellybeans_use_lowcolor_black = 0
