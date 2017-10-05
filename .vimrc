@@ -12,16 +12,16 @@ set relativenumber	"enble realative numbering for easier movement among lines
 set ignorecase		"while searching
 set smartcase		"while searching shows both cases unless searched for upper case
 set incsearch		"incrimental highlighting for search reasults
-set cursorline		"highlight the entire line of current cursor posistion
+"set cursorline		"highlight the entire line of current cursor posistion
 set noswapfile		"disable swap file
 set nobackup		"disable backup file
 set hlsearch		"Highlight all search matches
 nnoremap <CR> :noh<CR><CR>	" Clear search matches by pressing enter 
 
-colorscheme ashfaque
+"colorscheme ashfaque
 "colorscheme kkruby
 "colorscheme oceanlight
-colorscheme monokai
+"colorscheme monokai
 
 
 let g:jellybeans_use_lowcolor_black = 0
@@ -64,17 +64,7 @@ set softtabstop=4
 set tabstop=4
 set shiftwidth=4
 set expandtab
-" ===========================================
-" Aa syntax highlighting
-" ===========================================
-autocmd FileType aa call FT_aa()
-function! FT_aa()
-    set autoindent
-    set number
-    set syntax=aa
- endfunction
-"recognize an aa file from its extension
-au BufRead,BufNewFile *.aa set filetype=aa
+"
 " ===========================================
 "Gvim setting font size
 " ===========================================
