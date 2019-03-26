@@ -94,3 +94,6 @@ map <silent> <F11>
 \    :call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")<CR>
 " ===========================================
 set pastetoggle=<F10> "toggle paste/nopaste with F10 key
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
