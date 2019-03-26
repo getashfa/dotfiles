@@ -97,3 +97,4 @@ set pastetoggle=<F10> "toggle paste/nopaste with F10 key
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
+map <F9> :set wrap!<cr>
